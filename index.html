@@ -17,7 +17,7 @@
 </table>
 <script>
 async function fetchStudentData() {
-const response = await fetch('https://your-api-endpoint');
+const response = await fetch('https://studentportal-bscjejcjfahxh0dy.eastus2-01.azurewebsites.net/api/HttpTrigger1?code=SLJiKsSMjz_YbjqFoVg8Uo14y-k94vXw4H1rBj_eA9FzAzFuOcElcg==');
 const data = await response.json();
 const tableBody = document.querySelector('#studentTable tbody');
 tableBody.innerHTML = data.map(row =>
